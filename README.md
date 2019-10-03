@@ -8,21 +8,43 @@ Fork and clone this repo. On your fork, answer and commit the follow questions. 
 
 Create an array of strings called `colors` that contain "orange", "red", "yellow", "turquoise", and "lavender".
 
+let colors = ["orange", "red", "yellow", "turquoise", "lavender"]
+
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 
+let colors = ["Orange", "Red", "Yellow", "Turquoise", "Lavender"]
+
+
+print("\(colors [0]), \(colors [2]), and \(colors [4]) are some of my favorite colors")
 
 ## Question 2
 
 Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
+ 
+ var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
 
+ westernStates.remove(at:5)
+
+ westernStates.remove(at: 4)
+
+ print(westernStates)
 
 ## Question 3
 
 Iterate through the array below. For each state, print out the name of the state, a colon, and whether it is or is not **in the continental United States.**
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
+
+let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
+print("\(moreStates [0]) : Not continental")
+print("\(moreStates [1]) : Continental")
+print("\(moreStates [2]) : Not continental")
+print("\(moreStates [3]) : Continental")
+print("\(moreStates [4]) : Continental")
+print("\(moreStates [5]) : Continental")
+print("\(moreStates [6]) : Continental")
 
 
 ## Question 4
