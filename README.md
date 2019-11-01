@@ -7,22 +7,22 @@ Fork and clone this repo. On your fork, answer and commit the follow questions. 
 ## Question 1
 
 Create an array of strings called `colors` that contain "orange", "red", "yellow", "turquoise", and "lavender".
-
+```
 let colors = ["orange", "red", "yellow", "turquoise", "lavender"]
-
+```
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
-
+```
 let colors = ["Orange", "Red", "Yellow", "Turquoise", "Lavender"]
 
 
 print("\(colors [0]), \(colors [2]), and \(colors [4]) are some of my favorite colors")
-
+```
 ## Question 2
 
 Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
- 
+ ```
  var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
 
  westernStates.remove(at:5)
@@ -30,13 +30,13 @@ Remove "Illinois" and "Kansas" from the array below.
  westernStates.remove(at: 4)
 
  print(westernStates)
-
+```
 ## Question 3
 
 Iterate through the array below. For each state, print out the name of the state, a colon, and whether it is or is not **in the continental United States.**
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
-
+```
 let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
 print("\(moreStates [0]) : Not continental")
 print("\(moreStates [1]) : Continental")
@@ -45,7 +45,7 @@ print("\(moreStates [3]) : Continental")
 print("\(moreStates [4]) : Continental")
 print("\(moreStates [5]) : Continental")
 print("\(moreStates [6]) : Continental")
-
+```
 
 ## Question 4
 
@@ -53,10 +53,15 @@ Print out how many non-whitespace characters are in `myString`:
 
 `let myString = "This is good practice with Strings!"`
 
+```
+
+```
 Iterate through the array below. For each sentence, print out how many non-whitespace characters are in it.
 
 `let myFavoriteQuotes = ["To be or not to be, that is the question.", "The only source of knowledge is experience.", "Mr. Gorbachev, tear down this wall!", "Four score and twenty years ago..."]`
+```
 
+```
 
 ## Question 5
 
@@ -78,6 +83,9 @@ The below array represents an unfinished batting lineup for a baseball team. **Y
 
 `var battingLineup = ["Reyes", "Jeter", "Ramirez", "Pujols","Griffey","Thomas","Jones", "Rodriguez"]`
 
+```
+
+```
 
 ## Question 7
 
@@ -91,6 +99,7 @@ var numbers: [Int]
 
 let target: Int = 32
 ```
+
 
 Ex.1
 
@@ -111,7 +120,10 @@ target = 3
 
 //false
 ```
+```
 
+
+```
 
 ## Question 8
 
@@ -122,7 +134,10 @@ let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int
 
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
 ```
+```
 
+
+```
 
 ## Question 9
 
@@ -133,28 +148,37 @@ let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int
 
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
 ```
+```
 
+
+```
 
 ## Question 10
 
 Iterate through `secondListOfNumbers`, and print out all the odd numbers.
 
 `var secondListOfNumbers = [19,13,14,19,101,10000,141,404]`
+```
 
+```
 
 ## Question 11
 
 Iterate through `thirdListOfNumbers`, and print out the sum.
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
+```
 
+```
 
 ## Question 12
 
 Iterate through `thirdListOfNumbers`, and print out the sum of all the even numbers.
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
+```
 
+```
 
 ## Question 13
 
@@ -165,7 +189,11 @@ var listOne = [28, 64, 7, 96, 13, 32, 94, 11, 80, 68]
 var listTwo = [18, 94, 48, 6, 42, 68, 79, 76, 13, 7]
 var sharedElements = [Int]()
 ```
+```
 
+
+
+```
 # Part 2
 
 ## Question 1
