@@ -13,8 +13,6 @@ let colors = ["orange", "red", "yellow", "turquoise", "lavender"]
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 ```
 let colors = ["Orange", "Red", "Yellow", "Turquoise", "Lavender"]
-
-
 print("\(colors [0]), \(colors [2]), and \(colors [4]) are some of my favorite colors")
 ```
 ## Question 2
@@ -24,12 +22,8 @@ Remove "Illinois" and "Kansas" from the array below.
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
  ```
  var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
-
  westernStates.remove(at:5)
-
  westernStates.remove(at: 4)
-
- print(westernStates)
 ```
 ## Question 3
 
@@ -37,14 +31,7 @@ Iterate through the array below. For each state, print out the name of the state
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
 ```
-let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
-print("\(moreStates [0]) : Not continental")
-print("\(moreStates [1]) : Continental")
-print("\(moreStates [2]) : Not continental")
-print("\(moreStates [3]) : Continental")
-print("\(moreStates [4]) : Continental")
-print("\(moreStates [5]) : Continental")
-print("\(moreStates [6]) : Continental")
+
 ```
 
 ## Question 4
@@ -54,7 +41,7 @@ Print out how many non-whitespace characters are in `myString`:
 `let myString = "This is good practice with Strings!"`
 
 ```
-
+print(myString.count)
 ```
 Iterate through the array below. For each sentence, print out how many non-whitespace characters are in it.
 
@@ -84,7 +71,15 @@ The below array represents an unfinished batting lineup for a baseball team. **Y
 `var battingLineup = ["Reyes", "Jeter", "Ramirez", "Pujols","Griffey","Thomas","Jones", "Rodriguez"]`
 
 ```
-
+battingLineup.append("Suzuki")
+battingLineup[1] = "Tejada"
+print(battingLineup)
+battingLineup[5] = "Guerrero"
+print(battingLineup)
+battingLineup[0]
+battingLineup.remove(at: 0)
+battingLineup.append("Reyes")
+print(battingLineup)
 ```
 
 ## Question 7
@@ -99,7 +94,6 @@ var numbers: [Int]
 
 let target: Int = 32
 ```
-
 
 Ex.1
 
@@ -121,8 +115,18 @@ target = 3
 //false
 ```
 ```
+var numbers: [Int] = [2,5,7,2,9,7,6]
+let target: Int = 32
+var answer =  Bool()
 
-
+for num in numbers {
+    if num == 32 {
+        answer = true
+    } else {
+        answer = false
+    }
+}
+print(answer)
 ```
 
 ## Question 8
@@ -135,8 +139,9 @@ let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
 ```
 ```
-
-
+var arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int($0)}
+arrayOfNumbers.sort()
+arrayOfNumbers.last ?? 0
 ```
 
 ## Question 9
@@ -149,8 +154,9 @@ let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
 ```
 ```
-
-
+var anotherArrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int($0)}
+anotherArrayOfNumbers.sort()
+arrayOfNumbers.first
 ```
 
 ## Question 10
@@ -159,7 +165,11 @@ Iterate through `secondListOfNumbers`, and print out all the odd numbers.
 
 `var secondListOfNumbers = [19,13,14,19,101,10000,141,404]`
 ```
-
+for numbers in secondListOfNumbers {
+    if numbers % 2 != 0 {
+        print(numbers, terminator: " ")
+    }
+}
 ```
 
 ## Question 11
@@ -168,7 +178,13 @@ Iterate through `thirdListOfNumbers`, and print out the sum.
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
 ```
+var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]
+var sum = 0
 
+for numbers in thirdListOfNumbers {
+    sum += numbers
+}
+print("the sun is \(sum)")
 ```
 
 ## Question 12
@@ -177,7 +193,15 @@ Iterate through `thirdListOfNumbers`, and print out the sum of all the even numb
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
 ```
+var fourthListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]
+var evenSum = 0
 
+for evenNumbers in fourthListOfNumbers {
+    if evenNumbers % 2 == 0 {
+       evenSum += evenNumbers
+    }
+}
+print("The sume is \(evenSum)")
 ```
 
 ## Question 13
